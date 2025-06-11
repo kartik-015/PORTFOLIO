@@ -90,16 +90,26 @@ body::before {
     box-shadow: 0 5px 15px var(--hover-glow);
 }
 
-/* Main Content Styles */
-.main-content {
-    min-height: auto; /* Allow height to be determined by content */
+#home {
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 80px 40px 40px; /* Reduced padding */
+    justify-content: center;
+    padding: 80px 20px 20px; /* Top padding to offset nav, side/bottom for spacing */
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    align-items: center;
+    padding: 40px;
     background: var(--card-bg);
     position: relative;
     overflow: hidden;
-    /* Removed redundant padding-top as it's covered by the shorthand above */
+    width: 100%;
+    max-width: 1100px; /* Constrain width for larger screens */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .main-content::before {
