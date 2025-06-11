@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="navigation">
+        <ul id="nav_list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="scroll-sticker">
+        <!-- Content for the sticker, e.g., an image or text -->
+        <span>✨</span> 
+    </div>
+
+    <section id="home">
+        <div class="main-content">
+            <div class="text-content">
+                <h1>Hi There,</h1>
+                <h2>I'm <span class="name-first">KARTIK</span> <span class="name-last">GULERIA</span></h2>
+                <h3>I Am Into <span id="typing-text" class="highlight"></span></h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kartik-guleria-641457283/" class="social-icon linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/kartik-015" class="social-icon github" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/ig_kartik_99?igsh=MTBuamc4aXRsc3hhcg==" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-content">
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="img.png" alt="Profile Image" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="about.jpg" alt="Profile Image">
+                </div>
+                <div class="about-text">
+                    <h3>I'm a Passionate Developer</h3>
+                    <p>With a strong foundation in programming and a keen eye for detail, I specialize in creating efficient and user-friendly applications. My journey in technology began with a curiosity for problem-solving and has evolved into a passion for building innovative solutions.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Months Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        
+                    </div>
+                    <a href="Kartik_Resume.pdf" class="resume-btn" target="_blank">
+                        <span>View Resume</span>
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="education-container">
+            <div class="education-header">
+                <h2>My Education</h2>
+                <p>Academic journey and achievements</p>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2010 - 2021</span>
+                        <h3>SSC and HSC</h3>
+                        <p>St. Paul's School , Ankleshwar</p>
+                        <div class="timeline-tags">
+                            <span class="tag"> SSC Percentile: 82%</span>
+                            <span class="tag"> HSC Percentile: 85%</span>
+                            <span class="tag"> Achievement : Best Sports Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - current</span>
+                        <h3>Bachelor of Technology</h3>
+                        <h4>Information Technology</h4>
+                        <p>Charotar University of Science anfd Technology </p>
+                        <div class="timeline-tags">
+                            <span class="tag">CGPA: 9.2</span>
+                            <span class="tag">AWS </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-header">
+                <h2>My Skills</h2>
+                <p>Technical expertise and capabilities</p>
+            </div>
+            <div class="skills-content">
+                <div class="scroller" data-direction="left">
+                    <ul class="tag-list scroller__inner">
+                        <li><i class="fab fa-cuttlefish"></i> C++</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
+                </div>
+                <div class="scroller" data-direction="right">
+                    <ul class="tag-list scroller__inner">
+                        <li><i class="fas fa-shield-alt"></i> Cybersecurity</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-leaf"></i> MongoDB</li>
+                        <li><i class="fas fa-film"></i> After Effects</li>
+                        <li><i class="fas fa-camera-retro"></i> Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certificates">
+        <div class="certificates-container">
+            <div class="certificates-header">
+                <h2>My Certifications</h2>
+                <p>Professional achievements and completed courses</p>
+            </div>
+            
+            <div class="certificates-content">
+                <div class="certificates-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="technical">Technical</button>
+                    <button class="filter-btn" data-filter="professional">Professional</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                </div>
+
+                
+              <div class="certificates-grid">
+                  <div class="certificate-card" data-category="professional">
+                      <div class="certificate-image">
+                          <img src="Screenshot 2025-06-12 011741.png" alt="Internship Offer">
+                          <div class="certificate-overlay">
+                              <a href="Kartik Guleria .pdf" class="view-certificate" target="_blank">View Document</a>
+                          </div>
+                      </div>
+                      <div class="certificate-info">
+                          <h3>Internship Offer</h3>
+                          <p class="issuer">Issued by: [Company Name]</p>
+                          <p class="date">Date: [Date]</p>
+                          <div class="certificate-tags">
+                              <span class="tag">Professional</span>
+                              <span class="tag">Internship</span>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <div class="certificate-card" data-category="technical">
+                      <div class="certificate-image">
+                          <img src="Hack2skill-Certificate.png" alt="Hack2skill Certificate">
+                          <div class="certificate-overlay">
+                              <a href="Hack2skill-Certificate.png" class="view-certificate" target="_blank">View Certificate</a>
+                          </div>
+                      </div>
+                      <div class="certificate-info">
+                          <h3>[Name of Hack2skill Event]</h3>
+                          <p class="issuer">Issued by: Hack2skill</p>
+                          <p class="date">Date: [Date]</p>
+                          <div class="certificate-tags">
+                              <span class="tag">Competition</span>
+                              <span class="tag">Technical</span>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <div class="certificate-card" data-category="technical">
+                      <div class="certificate-image">
+                          <img src="Screenshot 2025-06-12 011607.png" alt="Machine Learning Certificate">
+                          <div class="certificate-overlay">
+                              <a href="ML_Certificate.pdf" class="view-certificate" target="_blank">View Certificate</a>
+                          </div>
+                      </div>
+                      <div class="certificate-info">
+                          <h3>Machine Learning A-Z</h3>
+                          <p class="issuer">Issued by: Udemy</p>
+                          <p class="date">Completed: Dec 2023</p>
+                          <div class="certificate-tags">
+                              <span class="tag">Machine Learning</span>
+                              <span class="tag">PyTorch</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Get in Touch</h2>
+                <p>Let's connect and create something amazing together</p>
+            </div>
+            
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kartikguleria015@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9428689914</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Anand, Gujarat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+</body>
+</html>
+
